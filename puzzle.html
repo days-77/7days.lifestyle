@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Puzzle Games Collection - Challenge your mind with our brain-teasing games">
+    <link rel="canonical" href="https://7days.lifestyle/puzzle" />
+    <title>Puzzle Games - 7Days Lifestyle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/" class="text-2xl font-bold text-gray-900">7Days.lifestyle</a>
+                    </div>
+                    <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
+                        <a href="/puzzle" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-blue-500 text-sm font-medium">
+                            Puzzle Games
+                        </a>
+                        <a href="/action" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
+                            Action Games
+                        </a>
+                        <a href="/emotional" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
+                            Emotional Games
+                        </a>
+                        <a href="/other" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
+                            Other Games
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Puzzle Games</h1>
+        <p class="text-gray-600 mb-8">Challenge your mind with our collection of brain-teasing puzzles and logic games.</p>
+        
+        <!-- Filters -->
+        <div class="mb-8 flex flex-wrap gap-4">
+            <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
+                All Games
+            </button>
+            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
+                Logic Puzzles
+            </button>
+            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
+                Word Games
+            </button>
+            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
+                Math Games
+            </button>
+        </div>
+
+        <!-- Game Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Game Card 1 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
+                <img src="https://via.placeholder.com/400x225" alt="Sudoku Master" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Sudoku Master</h2>
+                    <p class="text-gray-600 mb-4">Classic number puzzle with multiple difficulty levels.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">Difficulty: Medium</span>
+                        <a href="/games/sudoku" class="apple-button">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Card 2 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
+                <img src="https://via.placeholder.com/400x225" alt="Word Connect" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Word Connect</h2>
+                    <p class="text-gray-600 mb-4">Connect letters to form words in this challenging word puzzle.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">Difficulty: Easy</span>
+                        <a href="/games/word-connect" class="apple-button">Play Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Card 3 -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
+                <img src="https://via.placeholder.com/400x225" alt="Logic Grid" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Logic Grid</h2>
+                    <p class="text-gray-600 mb-4">Solve complex logic puzzles using deduction and reasoning.</p>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm text-gray-500">Difficulty: Hard</span>
+                        <a href="/games/logic-grid" class="apple-button">Play Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagination -->
+        <div class="mt-12 flex justify-center">
+            <nav class="flex items-center space-x-2">
+                <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg">1</a>
+                <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">2</a>
+                <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">3</a>
+                <span class="px-4 py-2 text-gray-500">...</span>
+                <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">Next</a>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t border-gray-200 mt-12">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-500 text-sm">
+                © 2024 7Days.lifestyle. All rights reserved.
+            </p>
+        </div>
+    </footer>
+</body>
+</html> 

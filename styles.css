@@ -1,0 +1,83 @@
+/* Custom styles for 7Days.lifestyle */
+
+/* Smooth transitions */
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Mobile menu styles */
+@media (max-width: 640px) {
+    .mobile-menu {
+        display: none;
+    }
+    
+    .mobile-menu.active {
+        display: block;
+    }
+}
+
+/* Search box focus animation */
+.search-box:focus {
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5);
+}
+
+/* Category card hover effect */
+.category-card {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Apple-style button */
+.apple-button {
+    background: linear-gradient(to bottom, #007AFF, #0056b3);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.apple-button:hover {
+    background: linear-gradient(to bottom, #0056b3, #003d80);
+    transform: translateY(-1px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Loading animation */
+@keyframes pulse {
+    0% {
+        opacity: 0.6;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}
+
+.loading {
+    animation: pulse 1.5s infinite;
+} 
