@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Puzzle Games Collection - Challenge your mind with our brain-teasing games">
-    <link rel="canonical" href="https://7days.lifestyle/puzzle" />
-    <title>Puzzle Games - 7Days Lifestyle</title>
+    <meta name="description" content="Action Games Collection - Experience thrilling adventures and fast-paced gameplay">
+    <link rel="canonical" href="https://7days.lifestyle/action" />
+    <title>Action Games - 7Days Lifestyle</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,10 +19,10 @@
                         <a href="/" class="text-2xl font-bold text-gray-900">7Days.lifestyle</a>
                     </div>
                     <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                        <a href="/puzzle" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-blue-500 text-sm font-medium">
+                        <a href="/puzzle" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
                             Puzzle Games
                         </a>
-                        <a href="/action" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
+                        <a href="/action" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-blue-500 text-sm font-medium">
                             Action Games
                         </a>
                         <a href="/emotional" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
@@ -39,8 +39,8 @@
 
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 class="text-4xl font-bold text-gray-900 mb-4">Puzzle Games</h1>
-        <p class="text-gray-600 mb-8">Challenge your mind with our collection of brain-teasing puzzles and logic games.</p>
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Action Games</h1>
+        <p class="text-gray-600 mb-8">Experience thrilling adventures and fast-paced gameplay in our action-packed games collection.</p>
         
         <!-- Filters -->
         <div class="mb-8 flex flex-wrap gap-4">
@@ -48,13 +48,13 @@
                 All Games
             </button>
             <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
-                Logic Puzzles
+                Platformers
             </button>
             <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
-                Word Games
+                Racing
             </button>
             <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
-                Math Games
+                Fighting
             </button>
         </div>
 
@@ -62,39 +62,39 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Game Card 1 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-                <img src="https://via.placeholder.com/400x225" alt="Sudoku Master" class="w-full h-48 object-cover">
+                <img src="https://via.placeholder.com/400x225" alt="Space Runner" class="w-full h-48 object-cover">
                 <div class="p-6">
-                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Sudoku Master</h2>
-                    <p class="text-gray-600 mb-4">Classic number puzzle with multiple difficulty levels.</p>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Space Runner</h2>
+                    <p class="text-gray-600 mb-4">Navigate through space obstacles in this fast-paced platformer.</p>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">Difficulty: Medium</span>
-                        <button onclick="openGame('sudoku')" class="apple-button">Play Now</button>
+                        <span class="text-sm text-gray-500">Difficulty: Hard</span>
+                        <button onclick="openGame('space-runner')" class="apple-button">Play Now</button>
                     </div>
                 </div>
             </div>
 
             <!-- Game Card 2 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-                <img src="https://via.placeholder.com/400x225" alt="Word Connect" class="w-full h-48 object-cover">
+                <img src="https://via.placeholder.com/400x225" alt="Street Racer" class="w-full h-48 object-cover">
                 <div class="p-6">
-                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Word Connect</h2>
-                    <p class="text-gray-600 mb-4">Connect letters to form words in this challenging word puzzle.</p>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Street Racer</h2>
+                    <p class="text-gray-600 mb-4">Race through city streets in this high-speed racing game.</p>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">Difficulty: Easy</span>
-                        <button onclick="openGame('word-connect')" class="apple-button">Play Now</button>
+                        <span class="text-sm text-gray-500">Difficulty: Medium</span>
+                        <button onclick="openGame('street-racer')" class="apple-button">Play Now</button>
                     </div>
                 </div>
             </div>
 
             <!-- Game Card 3 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-                <img src="https://via.placeholder.com/400x225" alt="Logic Grid" class="w-full h-48 object-cover">
+                <img src="https://via.placeholder.com/400x225" alt="Martial Arts" class="w-full h-48 object-cover">
                 <div class="p-6">
-                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Logic Grid</h2>
-                    <p class="text-gray-600 mb-4">Solve complex logic puzzles using deduction and reasoning.</p>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Martial Arts</h2>
+                    <p class="text-gray-600 mb-4">Master martial arts moves in this action-packed fighting game.</p>
                     <div class="flex items-center justify-between">
                         <span class="text-sm text-gray-500">Difficulty: Hard</span>
-                        <button onclick="openGame('logic-grid')" class="apple-button">Play Now</button>
+                        <button onclick="openGame('martial-arts')" class="apple-button">Play Now</button>
                     </div>
                 </div>
             </div>
@@ -141,16 +141,16 @@
     <script>
         // Game URLs mapping
         const gameUrls = {
-            'sudoku': 'https://example.com/games/sudoku',
-            'word-connect': 'https://example.com/games/word-connect',
-            'logic-grid': 'https://example.com/games/logic-grid'
+            'space-runner': 'https://example.com/games/space-runner',
+            'street-racer': 'https://example.com/games/street-racer',
+            'martial-arts': 'https://example.com/games/martial-arts'
         };
 
         // Game titles mapping
         const gameTitles = {
-            'sudoku': 'Sudoku Master',
-            'word-connect': 'Word Connect',
-            'logic-grid': 'Logic Grid'
+            'space-runner': 'Space Runner',
+            'street-racer': 'Street Racer',
+            'martial-arts': 'Martial Arts'
         };
 
         function openGame(gameId) {
