@@ -124,7 +124,13 @@
                 </button>
             </div>
             <div class="h-[calc(80vh-4rem)]">
-                <iframe id="gameFrame" class="w-full h-full" frameborder="0" allowfullscreen></iframe>
+                <iframe id="gameFrame" 
+                        class="w-full h-full" 
+                        frameborder="0" 
+                        allowfullscreen
+                        sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                        src="about:blank">
+                </iframe>
             </div>
         </div>
     </div>
@@ -158,17 +164,23 @@
             const frame = document.getElementById('gameFrame');
             const title = document.getElementById('gameTitle');
             
-            frame.src = gameUrls[gameId];
-            title.textContent = gameTitles[gameId];
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
+            // 先清空iframe
+            frame.src = 'about:blank';
+            
+            // 使用setTimeout确保iframe完全清空
+            setTimeout(() => {
+                frame.src = gameUrls[gameId];
+                title.textContent = gameTitles[gameId];
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }, 100);
         }
 
         function closeGame() {
             const modal = document.getElementById('gameModal');
             const frame = document.getElementById('gameFrame');
             
-            frame.src = '';
+            frame.src = 'about:blank';
             modal.classList.add('hidden');
             document.body.style.overflow = 'auto';
         }
