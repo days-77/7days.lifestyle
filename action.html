@@ -64,9 +64,10 @@
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
                 <div class="w-full h-64 bg-gray-100 flex items-center justify-center">
                     <img src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/thumb.jpg" 
-                         onerror="this.src='https://cloud.onlinegames.io/games/2025/unity/monster-survivors/thumb.png'"
+                         onerror="this.onerror=null; this.src='https://cloud.onlinegames.io/games/2025/unity/monster-survivors/thumb.png'"
                          alt="Monster Survivors" 
-                         class="max-w-full max-h-full object-contain">
+                         class="max-w-full max-h-full object-contain"
+                         loading="lazy">
                 </div>
                 <div class="p-6">
                     <h2 class="text-xl font-semibold text-gray-900 mb-2">Monster Survivors</h2>
