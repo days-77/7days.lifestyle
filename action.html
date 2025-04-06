@@ -200,6 +200,7 @@
             'martial-arts': 'Martial Arts'
         };
 
+        // 打开游戏
         function openGame(gameId) {
             if (gameUrls[gameId] === 'coming-soon') {
                 showComingSoon();
@@ -211,23 +212,30 @@
             const title = document.getElementById('gameTitle');
             
             title.textContent = gameTitles[gameId];
-            frame.src = gameUrls[gameId];
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
+            frame.src = 'about:blank';
+            
+            setTimeout(() => {
+                frame.src = gameUrls[gameId];
+                modal.classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }, 100);
         }
 
+        // 显示"即将推出"提示
         function showComingSoon() {
             const modal = document.getElementById('comingSoonModal');
             modal.classList.remove('hidden');
             document.body.style.overflow = 'hidden';
         }
 
+        // 关闭"即将推出"提示
         function closeComingSoon() {
             const modal = document.getElementById('comingSoonModal');
             modal.classList.add('hidden');
             document.body.style.overflow = 'auto';
         }
 
+        // 关闭游戏
         function closeGame() {
             const modal = document.getElementById('gameModal');
             const frame = document.getElementById('gameFrame');
@@ -237,7 +245,7 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Close modal when clicking outside
+        // 点击模态框外部关闭
         document.getElementById('gameModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeGame();
@@ -248,6 +256,26 @@
             if (e.target === this) {
                 closeComingSoon();
             }
+        });
+
+        // 添加键盘事件监听
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeGame();
+                closeComingSoon();
+            }
+        });
+
+        // 添加游戏卡片悬停效果
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
         });
     </script>
 </body>
