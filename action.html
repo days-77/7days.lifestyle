@@ -128,7 +128,8 @@
                         class="w-full h-full" 
                         frameborder="0" 
                         allowfullscreen
-                        sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"
+                        sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         src="about:blank">
                 </iframe>
             </div>
@@ -187,10 +188,15 @@
             
             // 使用setTimeout确保iframe完全清空
             setTimeout(() => {
-                frame.src = gameUrls[gameId];
-                title.textContent = gameTitles[gameId];
-                modal.classList.remove('hidden');
-                document.body.style.overflow = 'hidden';
+                try {
+                    frame.src = gameUrls[gameId];
+                    title.textContent = gameTitles[gameId];
+                    modal.classList.remove('hidden');
+                    document.body.style.overflow = 'hidden';
+                } catch (error) {
+                    console.error('Error loading game:', error);
+                    showComingSoon();
+                }
             }, 100);
         }
 
