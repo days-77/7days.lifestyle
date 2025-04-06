@@ -65,10 +65,10 @@
                 <img src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/thumb.jpg" alt="Monster Survivors" class="w-full h-48 object-cover">
                 <div class="p-6">
                     <h2 class="text-xl font-semibold text-gray-900 mb-2">Monster Survivors</h2>
-                    <p class="text-gray-600 mb-4">Survive waves of monsters in this action-packed survival game. Upgrade your weapons and abilities to become the ultimate survivor.</p>
+                    <p class="text-gray-600 mb-4">在怪物横行的世界中生存，升级武器和技能，成为终极幸存者。</p>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">Difficulty: Medium</span>
-                        <button onclick="openGame('monster-survivors')" class="apple-button">Play Now</button>
+                        <span class="text-sm text-gray-500">难度：中等</span>
+                        <button onclick="openGame('monster-survivors')" class="apple-button">立即开始</button>
                     </div>
                 </div>
             </div>
@@ -116,7 +116,7 @@
     <div id="gameModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
         <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-[80vh] bg-white rounded-lg shadow-xl">
             <div class="flex justify-between items-center p-4 border-b">
-                <h3 class="text-xl font-semibold" id="gameTitle">Game Title</h3>
+                <h3 class="text-xl font-semibold" id="gameTitle">Monster Survivors</h3>
                 <button onclick="closeGame()" class="text-gray-500 hover:text-gray-700">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
@@ -161,7 +161,7 @@
     <script>
         // Game URLs mapping
         const gameUrls = {
-            'monster-survivors': 'coming-soon',
+            'monster-survivors': 'https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html',
             'street-racer': 'coming-soon',
             'martial-arts': 'coming-soon'
         };
@@ -174,7 +174,19 @@
         };
 
         function openGame(gameId) {
-            showComingSoon();
+            if (gameUrls[gameId] === 'coming-soon') {
+                showComingSoon();
+                return;
+            }
+
+            const modal = document.getElementById('gameModal');
+            const frame = document.getElementById('gameFrame');
+            const title = document.getElementById('gameTitle');
+            
+            title.textContent = gameTitles[gameId];
+            frame.src = gameUrls[gameId];
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
         }
 
         function showComingSoon() {
