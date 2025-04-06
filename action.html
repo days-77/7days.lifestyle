@@ -63,14 +63,13 @@
             <!-- Game Card 1 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
                 <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
-                    <div class="absolute inset-0 bg-gradient-to-br from-purple-600 to-blue-500 opacity-50"></div>
+                    <div class="absolute inset-0 bg-gradient-to-br from-red-900 to-purple-900 opacity-80"></div>
                     <div class="relative text-center p-4 text-white">
                         <svg class="mx-auto h-16 w-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 4v16m8-8H4"></path>
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 12a8 8 0 11-16 0 8 8 0 0116 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
                         </svg>
-                        <h3 class="mt-4 text-xl font-bold">Monster Survivors</h3>
-                        <p class="mt-2 text-sm text-gray-200">动作生存游戏</p>
+                        <h3 class="mt-4 text-2xl font-bold text-red-400">Monster Survivors</h3>
+                        <p class="mt-2 text-sm text-gray-300">生存 • 战斗 • 升级</p>
                     </div>
                 </div>
                 <div class="p-6">
@@ -85,26 +84,44 @@
 
             <!-- Game Card 2 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-                <img src="https://via.placeholder.com/400x225" alt="Street Racer" class="w-full h-48 object-cover">
+                <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-indigo-900 opacity-80"></div>
+                    <div class="relative text-center p-4 text-white">
+                        <svg class="mx-auto h-16 w-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                        </svg>
+                        <h3 class="mt-4 text-2xl font-bold text-blue-400">Street Racer</h3>
+                        <p class="mt-2 text-sm text-gray-300">竞速 • 漂移 • 改装</p>
+                    </div>
+                </div>
                 <div class="p-6">
                     <h2 class="text-xl font-semibold text-gray-900 mb-2">Street Racer</h2>
-                    <p class="text-gray-600 mb-4">Race through city streets in this high-speed racing game.</p>
+                    <p class="text-gray-600 mb-4">在城市街道上体验高速竞速的快感。</p>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">Difficulty: Medium</span>
-                        <button onclick="openGame('street-racer')" class="apple-button">Play Now</button>
+                        <span class="text-sm text-gray-500">难度：中等</span>
+                        <button onclick="openGame('street-racer')" class="apple-button">立即开始</button>
                     </div>
                 </div>
             </div>
 
             <!-- Game Card 3 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-                <img src="https://via.placeholder.com/400x225" alt="Martial Arts" class="w-full h-48 object-cover">
+                <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-br from-orange-900 to-red-900 opacity-80"></div>
+                    <div class="relative text-center p-4 text-white">
+                        <svg class="mx-auto h-16 w-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 11l3-3m0 0l3 3m-3-3v8m0-13a9 9 0 110 18 9 9 0 010-18z"></path>
+                        </svg>
+                        <h3 class="mt-4 text-2xl font-bold text-orange-400">Martial Arts</h3>
+                        <p class="mt-2 text-sm text-gray-300">格斗 • 连招 • 必杀</p>
+                    </div>
+                </div>
                 <div class="p-6">
                     <h2 class="text-xl font-semibold text-gray-900 mb-2">Martial Arts</h2>
-                    <p class="text-gray-600 mb-4">Master martial arts moves in this action-packed fighting game.</p>
+                    <p class="text-gray-600 mb-4">掌握武术招式，在激烈的格斗中展现你的实力。</p>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">Difficulty: Hard</span>
-                        <button onclick="openGame('martial-arts')" class="apple-button">Play Now</button>
+                        <span class="text-sm text-gray-500">难度：困难</span>
+                        <button onclick="openGame('martial-arts')" class="apple-button">立即开始</button>
                     </div>
                 </div>
             </div>
