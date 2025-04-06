@@ -161,7 +161,7 @@
     <script>
         // Game URLs mapping
         const gameUrls = {
-            'monster-survivors': 'https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index.html?embed=true&fullscreen=true&game=true&unity=true',
+            'monster-survivors': 'coming-soon',
             'street-racer': 'coming-soon',
             'martial-arts': 'coming-soon'
         };
@@ -174,18 +174,7 @@
         };
 
         function openGame(gameId) {
-            if (gameUrls[gameId] === 'coming-soon') {
-                showComingSoon();
-                return;
-            }
-
-            // 在新窗口中打开游戏，并设置全屏
-            const gameWindow = window.open(gameUrls[gameId], '_blank', 'width=1024,height=768,top=50,left=50');
-            if (gameWindow) {
-                gameWindow.focus();
-            } else {
-                showComingSoon();
-            }
+            showComingSoon();
         }
 
         function showComingSoon() {
