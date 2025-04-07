@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="7Days Lifestyle - Your ultimate destination for casual games">
-    <link rel="canonical" href="https://7days.lifestyle" />
-    <title>7Days Lifestyle - Play Free Online Games</title>
+    <meta name="description" content="7Days.lifestyle - Your Ultimate Gaming Platform">
+    <title>7Days.lifestyle - Your Ultimate Gaming Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,17 +18,14 @@
                         <a href="/" class="text-2xl font-bold text-gray-900">7Days.lifestyle</a>
                     </div>
                     <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
-                        <a href="/puzzle" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-blue-500 text-sm font-medium">
+                        <a href="/puzzle" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
                             Puzzle Games
                         </a>
                         <a href="/action" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
                             Action Games
                         </a>
-                        <a href="/emotional" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
-                            Emotional Games
-                        </a>
-                        <a href="/other" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
-                            Other Games
+                        <a href="/clicker" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
+                            Clicker Games
                         </a>
                     </div>
                 </div>
@@ -37,42 +33,124 @@
         </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 class="text-4xl font-bold text-gray-900 mb-8">Welcome to 7Days Lifestyle</h1>
-        
-        <!-- Search Section -->
-        <div class="max-w-3xl mx-auto mb-12">
-            <div class="relative">
-                <input type="text" 
-                       class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500" 
-                       placeholder="Search for games...">
-                <button class="absolute right-3 top-1/2 transform -translate-y-1/2 bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">
-                    Search
-                </button>
+    <!-- Hero Section -->
+    <div class="relative bg-gradient-to-r from-blue-600 to-indigo-700">
+        <div class="max-w-7xl mx-auto py-24 px-4 sm:py-32 sm:px-6 lg:px-8">
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl">
+                欢迎来到 7Days.lifestyle
+            </h1>
+            <p class="mt-6 text-xl text-indigo-100 max-w-3xl">
+                探索我们精心挑选的游戏世界，从益智解谜到动作冒险，从放置经营到休闲娱乐，总有一款适合你。
+            </p>
+        </div>
+    </div>
+
+    <!-- Game Categories -->
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Puzzle Games Card -->
+            <a href="/puzzle" class="group">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <div class="relative h-64">
+                        <img src="https://cloud.onlinegames.io/games/2025/construct/321/watermelon-game/cover.jpg" alt="Puzzle Games" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-indigo-900 opacity-60"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white p-6">
+                                <h3 class="text-2xl font-bold mb-2">益智游戏</h3>
+                                <p class="text-sm opacity-90">挑战你的思维，锻炼你的大脑</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">体验各种益智游戏，包括合成消除、方块匹配和猜词游戏等，让大脑保持活跃。</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Action Games Card -->
+            <a href="/action" class="group">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <div class="relative h-64">
+                        <img src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/cover.jpg" alt="Action Games" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-br from-red-900 to-purple-900 opacity-60"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white p-6">
+                                <h3 class="text-2xl font-bold mb-2">动作游戏</h3>
+                                <p class="text-sm opacity-90">体验刺激的战斗和冒险</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">在充满挑战的动作游戏中展现你的技巧，包括生存战斗、赛车竞速和冒险探索等。</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Clicker Games Card -->
+            <a href="/clicker" class="group">
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-105">
+                    <div class="relative h-64">
+                        <img src="https://html5.gamedistribution.com/036ea308d90d43a1aed40716ae683c94/cover.jpg" alt="Clicker Games" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-gradient-to-br from-amber-900 to-yellow-900 opacity-60"></div>
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="text-center text-white p-6">
+                                <h3 class="text-2xl font-bold mb-2">放置游戏</h3>
+                                <p class="text-sm opacity-90">轻松经营，享受成长</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <p class="text-gray-600">体验轻松有趣的放置类游戏，包括采矿经营、农场管理和宠物养成等，享受成长的乐趣。</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <div class="bg-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                    为什么选择我们？
+                </h2>
+                <p class="mt-4 text-lg text-gray-600">
+                    我们提供最优质的游戏体验
+                </p>
+            </div>
+            <div class="mt-10">
+                <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mx-auto">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mt-4 text-lg font-medium text-gray-900">快速加载</h3>
+                        <p class="mt-2 text-base text-gray-600">无需下载，即点即玩，随时随地享受游戏乐趣。</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mx-auto">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mt-4 text-lg font-medium text-gray-900">安全可靠</h3>
+                        <p class="mt-2 text-base text-gray-600">所有游戏都经过严格筛选，确保安全可靠。</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mx-auto">
+                            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path>
+                            </svg>
+                        </div>
+                        <h3 class="mt-4 text-lg font-medium text-gray-900">持续更新</h3>
+                        <p class="mt-2 text-base text-gray-600">定期添加新游戏，保持内容新鲜有趣。</p>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <!-- Game Categories -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <a href="/puzzle" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                <h2 class="text-xl font-semibold text-gray-900 mb-2">Puzzle Games</h2>
-                <p class="text-gray-600">Challenge your mind with our collection of brain-teasing puzzles.</p>
-            </a>
-            <a href="/action" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                <h2 class="text-xl font-semibold text-gray-900 mb-2">Action Games</h2>
-                <p class="text-gray-600">Experience thrilling adventures and fast-paced gameplay.</p>
-            </a>
-            <a href="/emotional" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                <h2 class="text-xl font-semibold text-gray-900 mb-2">Emotional Games</h2>
-                <p class="text-gray-600">Immerse yourself in stories that touch your heart.</p>
-            </a>
-            <a href="/other" class="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow">
-                <h2 class="text-xl font-semibold text-gray-900 mb-2">Other Games</h2>
-                <p class="text-gray-600">Discover unique and diverse gaming experiences.</p>
-            </a>
-        </div>
-    </main>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-white border-t border-gray-200 mt-12">

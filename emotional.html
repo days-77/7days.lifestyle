@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Emotional Games Collection - Immerse yourself in stories that touch your heart">
-    <link rel="canonical" href="https://7days.lifestyle/emotional" />
-    <title>Emotional Games - 7Days Lifestyle</title>
+    <meta name="description" content="Clicker Games Collection - Enjoy our collection of idle and clicker games">
+    <link rel="canonical" href="https://7days.lifestyle/clicker" />
+    <title>Clicker Games - 7Days Lifestyle</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -25,11 +25,8 @@
                         <a href="/action" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
                             Action Games
                         </a>
-                        <a href="/emotional" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-blue-500 text-sm font-medium">
-                            Emotional Games
-                        </a>
-                        <a href="/other" class="text-gray-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-gray-300 text-sm font-medium">
-                            Other Games
+                        <a href="/clicker" class="text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 border-blue-500 text-sm font-medium">
+                            Clicker Games
                         </a>
                     </div>
                 </div>
@@ -39,76 +36,97 @@
 
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <h1 class="text-4xl font-bold text-gray-900 mb-4">Emotional Games</h1>
-        <p class="text-gray-600 mb-8">Immerse yourself in stories that touch your heart and explore deep emotional experiences.</p>
+        <h1 class="text-4xl font-bold text-gray-900 mb-4">Clicker Games</h1>
+        <p class="text-gray-600 mb-8">Enjoy our collection of idle and clicker games. Build your empire, manage your business, and watch your progress grow!</p>
         
-        <!-- Filters -->
-        <div class="mb-8 flex flex-wrap gap-4">
-            <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
-                All Games
-            </button>
-            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
-                Story-Driven
-            </button>
-            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
-                Life Simulation
-            </button>
-            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
-                Visual Novels
-            </button>
-        </div>
-
         <!-- Game Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Game Card 1 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-                <img src="https://via.placeholder.com/400x225" alt="Life Journey" class="w-full h-48 object-cover">
+                <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
+                    <img src="https://html5.gamedistribution.com/036ea308d90d43a1aed40716ae683c94/cover.jpg" alt="Idle Mining Empire" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-amber-900 to-yellow-900 opacity-60"></div>
+                    <div class="relative text-center p-4 text-white">
+                        <h3 class="mt-4 text-2xl font-bold text-amber-400">Idle Mining Empire</h3>
+                        <p class="mt-2 text-sm text-gray-300">采矿 • 经营 • 升级</p>
+                    </div>
+                </div>
                 <div class="p-6">
-                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Life Journey</h2>
-                    <p class="text-gray-600 mb-4">Experience the emotional journey of life through meaningful choices.</p>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Idle Mining Empire</h2>
+                    <p class="text-gray-600 mb-4">建立你的采矿帝国，升级设备，雇佣工人，成为最富有的矿主。</p>
+                    <div class="mb-4">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-2">游戏玩法：</h4>
+                        <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
+                            <li>点击收集矿石资源</li>
+                            <li>升级采矿设备和工人</li>
+                            <li>解锁新的矿区和资源</li>
+                            <li>建立自动化采矿系统</li>
+                        </ul>
+                    </div>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">Difficulty: Easy</span>
-                        <button onclick="openGame('life-journey')" class="apple-button">Play Now</button>
+                        <span class="text-sm text-gray-500">难度：简单</span>
+                        <button onclick="openGame('mining-empire')" class="apple-button">立即开始</button>
                     </div>
                 </div>
             </div>
 
             <!-- Game Card 2 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-                <img src="https://via.placeholder.com/400x225" alt="Heart Strings" class="w-full h-48 object-cover">
+                <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
+                    <img src="https://html5.gamedistribution.com/f687697ca011407aad07979006422fa4/cover.jpg" alt="Idle Farming Business" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-900 to-emerald-900 opacity-60"></div>
+                    <div class="relative text-center p-4 text-white">
+                        <h3 class="mt-4 text-2xl font-bold text-green-400">Idle Farming Business</h3>
+                        <p class="mt-2 text-sm text-gray-300">农场 • 经营 • 收获</p>
+                    </div>
+                </div>
                 <div class="p-6">
-                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Heart Strings</h2>
-                    <p class="text-gray-600 mb-4">A visual novel exploring the complexities of human relationships.</p>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Idle Farming Business</h2>
+                    <p class="text-gray-600 mb-4">经营你的农场，种植作物，饲养动物，建立农业帝国。</p>
+                    <div class="mb-4">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-2">游戏玩法：</h4>
+                        <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
+                            <li>种植和收获各种农作物</li>
+                            <li>饲养动物获取额外收入</li>
+                            <li>升级农场设施和设备</li>
+                            <li>扩大农场规模</li>
+                        </ul>
+                    </div>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">Difficulty: Medium</span>
-                        <button onclick="openGame('heart-strings')" class="apple-button">Play Now</button>
+                        <span class="text-sm text-gray-500">难度：简单</span>
+                        <button onclick="openGame('farming-business')" class="apple-button">立即开始</button>
                     </div>
                 </div>
             </div>
 
             <!-- Game Card 3 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-                <img src="https://via.placeholder.com/400x225" alt="Memory Lane" class="w-full h-48 object-cover">
+                <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
+                    <img src="https://html5.gamedistribution.com/44a7af01c5c54014b12732a82a4d9443/cover.jpg" alt="Idle Pet Business" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-900 to-pink-900 opacity-60"></div>
+                    <div class="relative text-center p-4 text-white">
+                        <h3 class="mt-4 text-2xl font-bold text-purple-400">Idle Pet Business</h3>
+                        <p class="mt-2 text-sm text-gray-300">宠物 • 经营 • 养成</p>
+                    </div>
+                </div>
                 <div class="p-6">
-                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Memory Lane</h2>
-                    <p class="text-gray-600 mb-4">Relive precious memories in this emotional life simulation game.</p>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Idle Pet Business</h2>
+                    <p class="text-gray-600 mb-4">经营宠物店，照顾可爱的宠物，建立你的宠物商业帝国。</p>
+                    <div class="mb-4">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-2">游戏玩法：</h4>
+                        <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
+                            <li>照顾和训练各种宠物</li>
+                            <li>升级宠物店设施</li>
+                            <li>解锁新的宠物品种</li>
+                            <li>扩大宠物店规模</li>
+                        </ul>
+                    </div>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">Difficulty: Easy</span>
-                        <button onclick="openGame('memory-lane')" class="apple-button">Play Now</button>
+                        <span class="text-sm text-gray-500">难度：简单</span>
+                        <button onclick="openGame('pet-business')" class="apple-button">立即开始</button>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Pagination -->
-        <div class="mt-12 flex justify-center">
-            <nav class="flex items-center space-x-2">
-                <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg">1</a>
-                <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">2</a>
-                <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">3</a>
-                <span class="px-4 py-2 text-gray-500">...</span>
-                <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">Next</a>
-            </nav>
         </div>
     </main>
 
@@ -128,22 +146,10 @@
                         class="w-full h-full" 
                         frameborder="0" 
                         allowfullscreen
-                        sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals"
+                        sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         src="about:blank">
                 </iframe>
-            </div>
-        </div>
-    </div>
-
-    <!-- Coming Soon Modal -->
-    <div id="comingSoonModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-md bg-white rounded-lg shadow-xl p-8">
-            <div class="text-center">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Coming Soon</h3>
-                <p class="text-gray-600 mb-6">Game is under maintenance. Please stay tuned!</p>
-                <button onclick="closeComingSoon()" class="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
-                    OK
-                </button>
             </div>
         </div>
     </div>
@@ -160,52 +166,35 @@
     <script>
         // Game URLs mapping
         const gameUrls = {
-            'life-journey': 'coming-soon',
-            'heart-strings': 'coming-soon',
-            'memory-lane': 'coming-soon'
+            'mining-empire': 'https://html5.gamedistribution.com/036ea308d90d43a1aed40716ae683c94/?gd_sdk_referrer_url=https://www.onlinegames.io/idle-mining-empire',
+            'farming-business': 'https://html5.gamedistribution.com/f687697ca011407aad07979006422fa4/?gd_sdk_referrer_url=https://www.onlinegames.io/idle-farming-business',
+            'pet-business': 'https://html5.gamedistribution.com/44a7af01c5c54014b12732a82a4d9443/?gd_sdk_referrer_url=https://www.onlinegames.io/idle-pet-business'
         };
 
         // Game titles mapping
         const gameTitles = {
-            'life-journey': 'Life Journey',
-            'heart-strings': 'Heart Strings',
-            'memory-lane': 'Memory Lane'
+            'mining-empire': 'Idle Mining Empire',
+            'farming-business': 'Idle Farming Business',
+            'pet-business': 'Idle Pet Business'
         };
 
+        // 打开游戏
         function openGame(gameId) {
-            if (gameUrls[gameId] === 'coming-soon') {
-                showComingSoon();
-                return;
-            }
-
             const modal = document.getElementById('gameModal');
             const frame = document.getElementById('gameFrame');
             const title = document.getElementById('gameTitle');
             
-            // 先清空iframe
+            title.textContent = gameTitles[gameId];
             frame.src = 'about:blank';
             
-            // 使用setTimeout确保iframe完全清空
             setTimeout(() => {
                 frame.src = gameUrls[gameId];
-                title.textContent = gameTitles[gameId];
                 modal.classList.remove('hidden');
                 document.body.style.overflow = 'hidden';
             }, 100);
         }
 
-        function showComingSoon() {
-            const modal = document.getElementById('comingSoonModal');
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeComingSoon() {
-            const modal = document.getElementById('comingSoonModal');
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
+        // 关闭游戏
         function closeGame() {
             const modal = document.getElementById('gameModal');
             const frame = document.getElementById('gameFrame');
@@ -215,17 +204,30 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Close modal when clicking outside
+        // 点击模态框外部关闭
         document.getElementById('gameModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeGame();
             }
         });
 
-        document.getElementById('comingSoonModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeComingSoon();
+        // 添加键盘事件监听
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeGame();
             }
+        });
+
+        // 添加游戏卡片悬停效果
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
         });
     </script>
 </body>

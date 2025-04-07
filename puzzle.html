@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Puzzle Games Collection - Challenge your mind with our brain-teasing games">
+    <meta name="description" content="Puzzle Games Collection - Challenge your mind with our collection of brain-teasing games">
     <link rel="canonical" href="https://7days.lifestyle/puzzle" />
     <title>Puzzle Games - 7Days Lifestyle</title>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -40,75 +40,97 @@
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <h1 class="text-4xl font-bold text-gray-900 mb-4">Puzzle Games</h1>
-        <p class="text-gray-600 mb-8">Challenge your mind with our collection of brain-teasing puzzles and logic games.</p>
+        <p class="text-gray-600 mb-8">Challenge your mind with our collection of brain-teasing games.</p>
         
-        <!-- Filters -->
-        <div class="mb-8 flex flex-wrap gap-4">
-            <button class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
-                All Games
-            </button>
-            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
-                Logic Puzzles
-            </button>
-            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
-                Word Games
-            </button>
-            <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300 transition-colors">
-                Math Games
-            </button>
-        </div>
-
         <!-- Game Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             <!-- Game Card 1 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-                <img src="https://via.placeholder.com/400x225" alt="Sudoku Master" class="w-full h-48 object-cover">
+                <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
+                    <img src="https://cloud.onlinegames.io/games/2025/construct/321/watermelon-game/cover.jpg" alt="Watermelon Game" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-pink-900 to-red-900 opacity-60"></div>
+                    <div class="relative text-center p-4 text-white">
+                        <h3 class="mt-4 text-2xl font-bold text-pink-400">Watermelon Game</h3>
+                        <p class="mt-2 text-sm text-gray-300">合成 • 消除 • 挑战</p>
+                    </div>
+                </div>
                 <div class="p-6">
-                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Sudoku Master</h2>
-                    <p class="text-gray-600 mb-4">Classic number puzzle with multiple difficulty levels.</p>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Watermelon Game</h2>
+                    <p class="text-gray-600 mb-4">通过合成水果来获得高分，挑战你的反应速度和策略能力。</p>
+                    <div class="mb-4">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-2">游戏玩法：</h4>
+                        <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
+                            <li>点击相同的水果进行合成</li>
+                            <li>合成后会生成更高级的水果</li>
+                            <li>获得西瓜即可获得最高分</li>
+                            <li>注意不要让水果堆满屏幕</li>
+                        </ul>
+                    </div>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">Difficulty: Medium</span>
-                        <button onclick="openGame('sudoku')" class="apple-button">Play Now</button>
+                        <span class="text-sm text-gray-500">难度：简单</span>
+                        <button onclick="openGame('watermelon-game')" class="apple-button">立即开始</button>
                     </div>
                 </div>
             </div>
 
             <!-- Game Card 2 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-                <img src="https://via.placeholder.com/400x225" alt="Word Connect" class="w-full h-48 object-cover">
+                <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
+                    <img src="https://cloud.onlinegames.io/games/2025/unity/tile-match/cover.jpg" alt="Tile Match" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-900 to-indigo-900 opacity-60"></div>
+                    <div class="relative text-center p-4 text-white">
+                        <h3 class="mt-4 text-2xl font-bold text-blue-400">Tile Match</h3>
+                        <p class="mt-2 text-sm text-gray-300">匹配 • 消除 • 策略</p>
+                    </div>
+                </div>
                 <div class="p-6">
-                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Word Connect</h2>
-                    <p class="text-gray-600 mb-4">Connect letters to form words in this challenging word puzzle.</p>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Tile Match</h2>
+                    <p class="text-gray-600 mb-4">通过匹配相同的方块来消除它们，考验你的观察力和策略能力。</p>
+                    <div class="mb-4">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-2">游戏玩法：</h4>
+                        <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
+                            <li>点击两个相同的方块进行匹配</li>
+                            <li>方块之间必须有可连接的路径</li>
+                            <li>消除所有方块即可通关</li>
+                            <li>使用提示功能可以帮助你找到匹配</li>
+                        </ul>
+                    </div>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">Difficulty: Easy</span>
-                        <button onclick="openGame('word-connect')" class="apple-button">Play Now</button>
+                        <span class="text-sm text-gray-500">难度：中等</span>
+                        <button onclick="openGame('tile-match')" class="apple-button">立即开始</button>
                     </div>
                 </div>
             </div>
 
             <!-- Game Card 3 -->
             <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-                <img src="https://via.placeholder.com/400x225" alt="Logic Grid" class="w-full h-48 object-cover">
+                <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
+                    <img src="https://cloud.onlinegames.io/games/2025/html/wordle/cover.jpg" alt="Wordle" class="absolute inset-0 w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-900 to-emerald-900 opacity-60"></div>
+                    <div class="relative text-center p-4 text-white">
+                        <h3 class="mt-4 text-2xl font-bold text-green-400">Wordle</h3>
+                        <p class="mt-2 text-sm text-gray-300">猜词 • 推理 • 挑战</p>
+                    </div>
+                </div>
                 <div class="p-6">
-                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Logic Grid</h2>
-                    <p class="text-gray-600 mb-4">Solve complex logic puzzles using deduction and reasoning.</p>
+                    <h2 class="text-xl font-semibold text-gray-900 mb-2">Wordle</h2>
+                    <p class="text-gray-600 mb-4">通过有限的尝试次数猜出隐藏的单词，考验你的词汇量和推理能力。</p>
+                    <div class="mb-4">
+                        <h4 class="text-sm font-semibold text-gray-700 mb-2">游戏玩法：</h4>
+                        <ul class="text-sm text-gray-600 list-disc pl-5 space-y-1">
+                            <li>每天有一个新的5字母单词需要猜测</li>
+                            <li>每次猜测后，字母会显示不同颜色</li>
+                            <li>绿色表示字母位置正确</li>
+                            <li>黄色表示字母存在但位置错误</li>
+                            <li>灰色表示字母不在单词中</li>
+                        </ul>
+                    </div>
                     <div class="flex items-center justify-between">
-                        <span class="text-sm text-gray-500">Difficulty: Hard</span>
-                        <button onclick="openGame('logic-grid')" class="apple-button">Play Now</button>
+                        <span class="text-sm text-gray-500">难度：中等</span>
+                        <button onclick="openGame('wordle')" class="apple-button">立即开始</button>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Pagination -->
-        <div class="mt-12 flex justify-center">
-            <nav class="flex items-center space-x-2">
-                <a href="#" class="px-4 py-2 bg-blue-500 text-white rounded-lg">1</a>
-                <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">2</a>
-                <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">3</a>
-                <span class="px-4 py-2 text-gray-500">...</span>
-                <a href="#" class="px-4 py-2 bg-gray-200 text-gray-700 rounded-lg hover:bg-gray-300">Next</a>
-            </nav>
         </div>
     </main>
 
@@ -128,22 +150,10 @@
                         class="w-full h-full" 
                         frameborder="0" 
                         allowfullscreen
-                        sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+                        sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-presentation"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         src="about:blank">
                 </iframe>
-            </div>
-        </div>
-    </div>
-
-    <!-- Coming Soon Modal -->
-    <div id="comingSoonModal" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
-        <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full max-w-md bg-white rounded-lg shadow-xl p-8">
-            <div class="text-center">
-                <h3 class="text-2xl font-semibold text-gray-900 mb-4">Coming Soon</h3>
-                <p class="text-gray-600 mb-6">Game is under maintenance. Please stay tuned!</p>
-                <button onclick="closeComingSoon()" class="px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">
-                    OK
-                </button>
             </div>
         </div>
     </div>
@@ -160,52 +170,35 @@
     <script>
         // Game URLs mapping
         const gameUrls = {
-            'sudoku': 'coming-soon',
-            'word-connect': 'coming-soon',
-            'logic-grid': 'coming-soon'
+            'watermelon-game': 'https://cloud.onlinegames.io/games/2025/construct/321/watermelon-game/index-og.html',
+            'tile-match': 'https://cloud.onlinegames.io/games/2025/unity/tile-match/index-og.html',
+            'wordle': 'https://cloud.onlinegames.io/games/2025/html/wordle/index-og.html'
         };
 
         // Game titles mapping
         const gameTitles = {
-            'sudoku': 'Sudoku Master',
-            'word-connect': 'Word Connect',
-            'logic-grid': 'Logic Grid'
+            'watermelon-game': 'Watermelon Game',
+            'tile-match': 'Tile Match',
+            'wordle': 'Wordle'
         };
 
+        // 打开游戏
         function openGame(gameId) {
-            if (gameUrls[gameId] === 'coming-soon') {
-                showComingSoon();
-                return;
-            }
-
             const modal = document.getElementById('gameModal');
             const frame = document.getElementById('gameFrame');
             const title = document.getElementById('gameTitle');
             
-            // 先清空iframe
+            title.textContent = gameTitles[gameId];
             frame.src = 'about:blank';
             
-            // 使用setTimeout确保iframe完全清空
             setTimeout(() => {
                 frame.src = gameUrls[gameId];
-                title.textContent = gameTitles[gameId];
                 modal.classList.remove('hidden');
                 document.body.style.overflow = 'hidden';
             }, 100);
         }
 
-        function showComingSoon() {
-            const modal = document.getElementById('comingSoonModal');
-            modal.classList.remove('hidden');
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeComingSoon() {
-            const modal = document.getElementById('comingSoonModal');
-            modal.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-        }
-
+        // 关闭游戏
         function closeGame() {
             const modal = document.getElementById('gameModal');
             const frame = document.getElementById('gameFrame');
@@ -215,17 +208,30 @@
             document.body.style.overflow = 'auto';
         }
 
-        // Close modal when clicking outside
+        // 点击模态框外部关闭
         document.getElementById('gameModal').addEventListener('click', function(e) {
             if (e.target === this) {
                 closeGame();
             }
         });
 
-        document.getElementById('comingSoonModal').addEventListener('click', function(e) {
-            if (e.target === this) {
-                closeComingSoon();
+        // 添加键盘事件监听
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeGame();
             }
+        });
+
+        // 添加游戏卡片悬停效果
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
         });
     </script>
 </body>
