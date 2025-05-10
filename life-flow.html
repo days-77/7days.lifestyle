@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生活流水记录 - 7Days.lifestyle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">生活流水记录</h1>
+        
+        <!-- 添加记录表单 -->
+        <div class="bg-white rounded-lg shadow-md p-6 mb-8">
+            <form id="lifeFlowForm" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">日期时间</label>
+                    <input type="datetime-local" id="datetime" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">类别</label>
+                    <select id="category" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        <option value="工作">工作</option>
+                        <option value="学习">学习</option>
+                        <option value="运动">运动</option>
+                        <option value="饮食">饮食</option>
+                        <option value="休息">休息</option>
+                        <option value="其他">其他</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">内容</label>
+                    <textarea id="content" rows="3" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700">提醒时间</label>
+                    <input type="datetime-local" id="reminder" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                </div>
+                <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                    添加记录
+                </button>
+            </form>
+        </div>
+
+        <!-- 记录列表 -->
+        <div class="bg-white rounded-lg shadow-md p-6">
+            <h2 class="text-xl font-semibold mb-4">今日记录</h2>
+            <div id="recordsList" class="space-y-4">
+                <!-- 记录将通过 JavaScript 动态添加 -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 初始化本地存储
+        if (!localStorage.getItem('lifeFlowRecords')) {
+            localStorage.setItem('lifeFlowRecords', JSON.stringify([]));
+        }
+
+        // 获取记录
+        function getRecords() {
+            return JSON.parse(localStorage.getItem('lifeFlowRecords'));
+        }
+
+        // 保存记录
+        function saveRecord(record) {
+            const records = getRecords();
+            records.push(record);
+            localStorage.setItem('lifeFlowRecords', JSON.stringify(records));
+        }
+
+        // 显示记录
+        function displayRecords() {
+            const records = getRecords();
+            const recordsList = document.getElementById('recordsList');
+            recordsList.innerHTML = '';
+
+            records.sort((a, b) => new Date(b.datetime) - new Date(a.datetime))
+                  .forEach(record => {
+                const recordElement = document.createElement('div');
+                recordElement.className = 'border-b pb-4';
+                recordElement.innerHTML = `
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <span class="inline-block px-2 py-1 text-xs font-semibold rounded-full bg-blue-100 text-blue-800">${record.category}</span>
+                            <p class="mt-2 text-gray-700">${record.content}</p>
+                        </div>
+                        <div class="text-sm text-gray-500">
+                            ${new Date(record.datetime).toLocaleString()}
+                        </div>
+                    </div>
+                `;
+                recordsList.appendChild(recordElement);
+            });
+        }
+
+        // 处理表单提交
+        document.getElementById('lifeFlowForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const record = {
+                datetime: document.getElementById('datetime').value,
+                category: document.getElementById('category').value,
+                content: document.getElementById('content').value,
+                reminder: document.getElementById('reminder').value
+            };
+
+            saveRecord(record);
+            displayRecords();
+            this.reset();
+
+            // 设置提醒
+            if (record.reminder) {
+                const reminderTime = new Date(record.reminder).getTime();
+                const now = new Date().getTime();
+                const timeUntilReminder = reminderTime - now;
+
+                if (timeUntilReminder > 0) {
+                    setTimeout(() => {
+                        alert(`提醒：${record.content}`);
+                    }, timeUntilReminder);
+                }
+            }
+        });
+
+        // 初始化显示
+        displayRecords();
+
+        // 设置默认时间为当前时间
+        const now = new Date();
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0');
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        
+        document.getElementById('datetime').value = `${year}-${month}-${day}T${hours}:${minutes}`;
+    </script>
+</body>
+</html> 

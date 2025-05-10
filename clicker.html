@@ -14,6 +14,9 @@
     <meta property="og:image" content="https://7days.lifestyle/clicker-games.png">
     <link rel="canonical" href="https://7days.lifestyle/clicker">
     <title>放置游戏合集 - 7Days.lifestyle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,78 +43,181 @@
             </div>
         </div>
     </nav>
-</head>
-<body>
-    <!-- Game Card 1 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-        <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
-            <img src="https://html5.gamedistribution.com/036ea308d90d43a1aed40716ae683c94/cover.jpg" alt="Idle Mining Empire" class="absolute inset-0 w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-br from-orange-900 to-amber-900 opacity-60"></div>
-            <div class="relative text-center p-4 text-white">
-                <h3 class="mt-4 text-2xl font-bold text-orange-400">Idle Mining Empire</h3>
-                <p class="mt-2 text-sm text-gray-300">采矿 • 经营 • 升级</p>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="text-center mb-12">
+            <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+                放置游戏合集
+            </h1>
+            <p class="mt-4 text-xl text-gray-600">
+                轻松经营，享受成长，体验放置游戏的乐趣
+            </p>
+        </div>
+
+        <!-- Game Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Game Card 1 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="relative h-64">
+                    <img src="https://html5.gamedistribution.com/036ea308d90d43a1aed40716ae683c94/cover.jpg" alt="Idle Mining Empire" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-orange-900 to-amber-900 opacity-60"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white p-6">
+                            <h3 class="text-2xl font-bold mb-2">Idle Mining Empire</h3>
+                            <p class="text-sm opacity-90">采矿 • 经营 • 升级</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">游戏介绍</h4>
+                        <p class="text-gray-600">建立你的采矿帝国，自动化生产，成为最富有的矿主！</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">游戏特点</h4>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>自动化采矿系统</li>
+                            <li>丰富的升级选项</li>
+                            <li>多样化的资源管理</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">难度：简单</span>
+                        <button onclick="openGame('https://html5.gamedistribution.com/036ea308d90d43a1aed40716ae683c94/?gd_sdk_referrer_url=https://www.onlinegames.io/idle-mining-empire')" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                            立即开始
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Card 2 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="relative h-64">
+                    <img src="https://html5.gamedistribution.com/f687697ca011407aad07979006422fa4/cover.jpg" alt="Idle Farming Business" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-green-900 to-emerald-900 opacity-60"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white p-6">
+                            <h3 class="text-2xl font-bold mb-2">Idle Farming Business</h3>
+                            <p class="text-sm opacity-90">农场 • 经营 • 收获</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">游戏介绍</h4>
+                        <p class="text-gray-600">经营你的农场，种植作物，收获丰厚的回报！</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">游戏特点</h4>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>多样化的农作物</li>
+                            <li>农场自动化系统</li>
+                            <li>丰富的经营策略</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">难度：简单</span>
+                        <button onclick="openGame('https://html5.gamedistribution.com/f687697ca011407aad07979006422fa4/?gd_sdk_referrer_url=https://www.onlinegames.io/idle-farming-business')" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                            立即开始
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Game Card 3 -->
+            <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                <div class="relative h-64">
+                    <img src="https://html5.gamedistribution.com/44a7af01c5c54014b12732a82a4d9443/cover.jpg" alt="Idle Pet Business" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-br from-pink-900 to-purple-900 opacity-60"></div>
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="text-center text-white p-6">
+                            <h3 class="text-2xl font-bold mb-2">Idle Pet Business</h3>
+                            <p class="text-sm opacity-90">宠物 • 经营 • 养成</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6">
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">游戏介绍</h4>
+                        <p class="text-gray-600">照顾可爱的宠物，建立你的宠物帝国！</p>
+                    </div>
+                    <div class="mb-4">
+                        <h4 class="text-lg font-semibold text-gray-900 mb-2">游戏特点</h4>
+                        <ul class="list-disc list-inside text-gray-600">
+                            <li>多种可爱宠物</li>
+                            <li>宠物养成系统</li>
+                            <li>经营宠物商店</li>
+                        </ul>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <span class="text-sm text-gray-500">难度：简单</span>
+                        <button onclick="openGame('https://html5.gamedistribution.com/44a7af01c5c54014b12732a82a4d9443/?gd_sdk_referrer_url=https://www.onlinegames.io/idle-pet-business')" class="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors">
+                            立即开始
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Game Modal -->
+    <div id="gameModal" class="fixed inset-0 bg-black bg-opacity-50 hidden flex items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-4 w-11/12 h-5/6 max-w-6xl">
+            <div class="flex justify-between items-center mb-4">
+                <h2 id="gameTitle" class="text-2xl font-bold text-gray-900"></h2>
+                <button onclick="closeGame()" class="text-gray-500 hover:text-gray-700">
+                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="relative w-full h-full">
+                <iframe id="gameFrame" class="w-full h-full border-0" allowfullscreen></iframe>
             </div>
         </div>
     </div>
 
-    <!-- Game Card 2 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-        <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
-            <img src="https://html5.gamedistribution.com/f687697ca011407aad07979006422fa4/cover.jpg" alt="Idle Farming Business" class="absolute inset-0 w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-br from-green-900 to-emerald-900 opacity-60"></div>
-            <div class="relative text-center p-4 text-white">
-                <h3 class="mt-4 text-2xl font-bold text-green-400">Idle Farming Business</h3>
-                <p class="mt-2 text-sm text-gray-300">农场 • 经营 • 收获</p>
-            </div>
-        </div>
-    </div>
+    <script>
+        const gameUrls = {
+            'Idle Mining Empire': 'https://html5.gamedistribution.com/036ea308d90d43a1aed40716ae683c94/?gd_sdk_referrer_url=https://www.onlinegames.io/idle-mining-empire',
+            'Idle Farming Business': 'https://html5.gamedistribution.com/f687697ca011407aad07979006422fa4/?gd_sdk_referrer_url=https://www.onlinegames.io/idle-farming-business',
+            'Idle Pet Business': 'https://html5.gamedistribution.com/44a7af01c5c54014b12732a82a4d9443/?gd_sdk_referrer_url=https://www.onlinegames.io/idle-pet-business'
+        };
 
-    <!-- Game Card 3 -->
-    <div class="bg-white rounded-lg shadow-md overflow-hidden category-card">
-        <div class="w-full h-64 bg-[#1a1a1a] flex items-center justify-center relative overflow-hidden">
-            <img src="https://html5.gamedistribution.com/44a7af01c5c54014b12732a82a4d9443/cover.jpg" alt="Idle Pet Business" class="absolute inset-0 w-full h-full object-cover">
-            <div class="absolute inset-0 bg-gradient-to-br from-pink-900 to-purple-900 opacity-60"></div>
-            <div class="relative text-center p-4 text-white">
-                <h3 class="mt-4 text-2xl font-bold text-pink-400">Idle Pet Business</h3>
-                <p class="mt-2 text-sm text-gray-300">宠物 • 经营 • 养成</p>
-            </div>
-        </div>
-    </div>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "CollectionPage",
-        "name": "放置游戏合集",
-        "description": "包含 Idle Mining Empire、Idle Farming Business 和 Idle Pet Business 等休闲放置游戏。免费、安全、无需下载。",
-        "url": "https://7days.lifestyle/clicker",
-        "mainEntity": {
-            "@type": "ItemList",
-            "itemListElement": [
-                {
-                    "@type": "Game",
-                    "name": "Idle Mining Empire",
-                    "description": "建立你的采矿帝国，自动化生产！",
-                    "gamePlatform": "Web Browser",
-                    "genre": "Idle"
-                },
-                {
-                    "@type": "Game",
-                    "name": "Idle Farming Business",
-                    "description": "经营你的农场，收获丰厚的回报！",
-                    "gamePlatform": "Web Browser",
-                    "genre": "Idle"
-                },
-                {
-                    "@type": "Game",
-                    "name": "Idle Pet Business",
-                    "description": "照顾可爱的宠物，建立你的宠物帝国！",
-                    "gamePlatform": "Web Browser",
-                    "genre": "Idle"
-                }
-            ]
+        function openGame(url) {
+            const modal = document.getElementById('gameModal');
+            const frame = document.getElementById('gameFrame');
+            const title = document.getElementById('gameTitle');
+            
+            frame.src = url;
+            title.textContent = Object.keys(gameUrls).find(key => gameUrls[key] === url);
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
         }
-    }
+
+        function closeGame() {
+            const modal = document.getElementById('gameModal');
+            const frame = document.getElementById('gameFrame');
+            
+            frame.src = '';
+            modal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('gameModal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                closeGame();
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') {
+                closeGame();
+            }
+        });
     </script>
 </body>
 </html> 
